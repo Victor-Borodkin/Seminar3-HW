@@ -44,3 +44,18 @@
 
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+while (count <= number)
+{
+    double result = Math.Pow(count, 3);;
+    Console.Write(result + ", ");
+    count++;
+    if (count == number)
+    {
+        Console.Write(Math.Pow(number, 3));
+        break;
+    }
+}
