@@ -36,7 +36,19 @@
 
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
+Double x1, y1, z1, x2, y2, z2, result; 
+Console.WriteLine("Введите кординаты x1, y1 и z1 точки A: ");
+x1 = Convert.ToDouble(Console.ReadLine());
+y1 = Convert.ToDouble(Console.ReadLine());
+z1 = Convert.ToDouble(Console.ReadLine());
 
+Console.WriteLine("Введите кординаты x2, y2 и z2 точки B: ");
+x2 = Convert.ToDouble(Console.ReadLine());
+y2 = Convert.ToDouble(Console.ReadLine());
+z2 = Convert.ToDouble(Console.ReadLine());
+
+result = Math.Sqrt(Math.Pow(x2-x1, 2) + Math.Pow(y2-y1, 2) + Math.Pow(z2-z1, 2));
+Console.Write($"Расстояние между токами A и B равно: {result}");
 
 // Задача 23
 
@@ -45,17 +57,17 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-while (count <= number)
-{
-    double result = Math.Pow(count, 3);;
-    Console.Write(result + ", ");
-    count++;
-    if (count == number)
-    {
-        Console.Write(Math.Pow(number, 3));
-        break;
-    }
-}
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int count = 1;
+// while (count <= number)
+// {
+//     double result = Math.Pow(count, 3);
+//     Console.Write(result + ", ");
+//     count++;
+//     if (count == number)
+//     {
+//         Console.Write(Math.Pow(number, 3));
+//         break;
+//     }
+// }
